@@ -15,6 +15,7 @@ class ShoppingActivity : AppCompatActivity() {
         val database = ShoppingDatabase(this )
         val repository = ShoppingRepository(database)
         val factory = ShoppingViewModelFactory(repository)
+
         val viewModel = ViewModelProviders.of(this, factory).get(ShoppingViewModel::class.java)
     }
 }
