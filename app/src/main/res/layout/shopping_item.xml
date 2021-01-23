@@ -24,31 +24,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <Button
         android:id="@+id/ivDelete"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:src="@drawable/ic_delete"
+        android:text="Delete"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
-    <ImageView
+    <Button
         android:id="@+id/ivMinus"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:src="@drawable/ic_minus"
+        android:text="Minus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvAmount" />
 
-    <ImageView
+    <Button
         android:id="@+id/ivPlus"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_plus"
+        android:text="Add"
         app:layout_constraintEnd_toStartOf="@+id/ivMinus"
         app:layout_constraintTop_toBottomOf="@+id/tvAmount" />
 </androidx.constraintlayout.widget.ConstraintLayout>
